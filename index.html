@@ -5,16 +5,15 @@
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
         <title>Discography Project</title>
     </head>
-    <!-- TODO find a good place for the nav-->
     <body>
 
-        <header class="album">
+        <header id="home">
             <nav>
                 <ul>
-                    <li><a href="" title="Home">Home</a></li>
-                    <li><a href="" title="Album releases by BAND">Album Releases</a></li>
-                    <li><a href="" title="Members of BAND">Band Members</a></li>
-                    <li><a href="" title="Register for our mailing list">Mailing List Form</a></li>
+                    <li><a href="#home" title="Home">Home</a></li>
+                    <li><a href="#albums" title="Album releases by BAND">Album Releases</a></li>
+                    <li><a href="#members" title="Members of BAND">Band Members</a></li>
+                    <li><a href="#form" title="Register for our mailing list">Mailing List Form</a></li>
                 </ul>
                 </nav>
                     <h1>Band Name</h1>
@@ -22,7 +21,7 @@
                     <p>Short paragraph about the band</p>
         </header>
         <!--album section-->
-        <h2>Albums Releases</h2>
+        <h2 id="albums">Albums Releases</h2>
         <section class="album">
             <h3>Album Name</h3> <!--header number may change-->
             <img src="null" alt="Cover art for ALBUM">
@@ -44,7 +43,7 @@
             <ol></ol> <!--track list will go here-->
         </section>
         <!--band member section-->
-        <h2>Band Members</h2>
+        <h2 id="members">Band Members</h2>
         <section class="member">
             <h3>John Doe</h3>
             <img src="null" alt="Picture of John Doe">
@@ -56,7 +55,7 @@
             <p>short thing about the band member maybe just their role i dont know yet</p>
         </section>
         <!--form section TODO group up the form so there grouped in a relevant way-->
-        <form action="null" method="post">
+        <form action="null" method="post" id="form">
             First Name:<br>
             <input name="firstName" type="text"><br>
             Last Name:<br>
