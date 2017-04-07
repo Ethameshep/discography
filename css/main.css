@@ -1,0 +1,28 @@
+/* Discography project
+AUTHOR: 
+LICENSE: The code written for this project is all under the MIT License.
+----------------------
+TOOLS USED
+Bootstrap 3: https://github.com/twbs/bootstrap
+Normalize.css: https://github.com/necolas/normalize.css/
+----------------------
+TABLE OF CONTENTS
+
+1.Header
+2.Nav
+3.Album release sections
+4.Band member sections
+5.Mail form
+----------------------
+COLOR GUIDE
+
+pending
+----------------------
+TYPOGRAPHY GUIDE
+
+pending
+----------------------
+*/
+@import url(normalize.css);
+@import url(bootstrap.css);
+@import url(bootstrap-theme.css);
