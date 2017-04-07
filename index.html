@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
         <title>Discography Project</title>
     </head>
     <body>
@@ -56,15 +56,18 @@
         </section>
         <!--form section TODO group up the form so there grouped in a relevant way-->
         <form action="null" method="post" id="form">
+            <fieldset class="name">
             First Name:<br>
             <input name="firstName" type="text"><br>
             Last Name:<br>
             <input name="lastName" type="text"><br>
+            </fieldset>
+            <fieldset class="location">
             Address:<br>
             <input name="address" type="text"><br>
             City:<br>
             <input name="city" type="text"><br>
-            State:<br> <!--use dropdown menu-->
+            State:<br>
             <select name="state">
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -120,6 +123,8 @@
 
             Zip Code:<br>
             <input name="zip" type="text"><br>
+            </fieldset>
+            <fieldset class="age">
             <!--DO NOT CHANGE AGE FORM-->
             Birthday:<br>
             <select name="month">
@@ -270,12 +275,16 @@
                 <option value="1920">1920</option>
                 <option value="1919">1919</option>
                 </select> <br>
+            </fieldset>
+            <fieldset class="email">
             Email Preference:<br>
             <input name="email" type="radio"> HTML<br>
             <input name="email" type="radio"> Plain Text<br>
+            </fieldset>
+            Comment:<br>
+            <textarea name="comment"></textarea><br>
             Terms of Service:
             <input type="checkbox"><br>
-            Register:<br>
             <input type="submit" value="Register">
         </form>
 
