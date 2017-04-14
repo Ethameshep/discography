@@ -27,4 +27,16 @@ pending
 @import url(bootstrap.css);
 @import url(bootstrap-theme.css);
 
+/*NAV SECTION*/
+nav {
+    position: fixed;
+    background: #666;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+}
 
+nav li {
+    display: inline;
+    font-size: 3em;
+}
