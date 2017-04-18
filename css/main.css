@@ -2,14 +2,14 @@
 AUTHOR: https://github.com/ultimatezenzar 
 LICENSE: The code written for this project is all under the MIT License.
 ----------------------
-TOOLS USED
+LIBRARIES USED
 Bootstrap 3: https://github.com/twbs/bootstrap
 Normalize.css: https://github.com/necolas/normalize.css/
 ----------------------
 TABLE OF CONTENTS
 
-1.Header
-2.Nav
+1.Nav
+2.Heading
 3.Album release sections
 4.Band member sections
 5.Mail form
@@ -23,8 +23,8 @@ TYPOGRAPHY GUIDE
 pending
 ----------------------
 */
-@import url(normalize.css);
-@import url(bootstrap.css);
+@import url(normalize.css); /*CSS Reset*/
+@import url(bootstrap.css); /*fancy responsive stuff*/
 @import url(bootstrap-theme.css);
 
 /*NAV SECTION*/
@@ -36,23 +36,35 @@ nav {
     position: fixed;
     background: #666;
     top: 0%;
-    z-index: 16; /*zindex needs to be 16 to overlap carousel indicators*/
+    z-index: 16; /*z-index needs to be 16 to overlap carousel indicators*/
     width: 100%;
 }
 
 nav li {
     display: inline;
     font-size: 3em;
+    padding-right: .4em;
 }
 /*NAV MOBILE*/
 @media only screen and (max-width: 1280px) {
     header button {
         display: block;
-        font-size: 3em;
+        font-size: 3em; /*font size matches default nav*/
     }
 
     nav li {
         display: block; /*changes nav to block diplay for tablets and phones*/
+        padding-right: 0; /*removes padding since it's not longer needed*/
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    header button {
+        font-size: 2em;
+    }
+
+    nav li {
+        font-size: 2em;
     }
 }
 
@@ -60,4 +72,14 @@ nav li {
 h1 {
     margin-top: 2em; /*prevents nav from overlapping header while at top*/
     text-align: center;
+}
+
+.active img:first-child {
+    margin: auto;
+}
+/*HEADING MOBILE*/
+@media only screen and (max-width: 360px) {
+    h1 {
+        margin-top: 1.3em; /*reduces the space between nav and h1 for small screens*/
+    }
 }
