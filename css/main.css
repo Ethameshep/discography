@@ -54,18 +54,13 @@ nav li {
 
     nav li {
         display: block; /*changes nav to block diplay for tablets and phones*/
-        padding-right: 0; /*removes padding since it's not longer needed*/
+        padding-right: 0; /*removes padding since it's no longer needed*/
     }
 }
 
-@media only screen and (max-width: 360px) {
-    header button {
-        font-size: 2em;
-    }
-
-    nav li {
-        font-size: 2em;
-    }
+@media only screen and (max-width: 360px) { /*small adjustements for even smaller screens*/
+    header button {font-size: 2em;}
+    nav li {font-size: 2em;}
 }
 
 /*HEADING SECTION*/
@@ -75,7 +70,8 @@ h1 {
 }
 
 .active img:first-child {
-    margin: auto;
+    margin: auto; /*keeps image in center of carousel*/
+    width: 100%;
 }
 /*HEADING MOBILE*/
 @media only screen and (max-width: 360px) {
