@@ -27,41 +27,6 @@ pending
 @import url(bootstrap.css); /*fancy responsive stuff*/
 @import url(bootstrap-theme.css);
 
-/*NAV SECTION*/
-header button {
-    display: none; /*hides collapse button on larger displays*/
-}
-
-nav {
-    position: fixed;
-    background: #666;
-    top: 0%;
-    z-index: 16; /*z-index needs to be 16 to overlap carousel indicators*/
-    width: 100%;
-}
-
-nav li {
-    display: inline;
-    font-size: 3em;
-    padding-right: .4em;
-}
-/*NAV MOBILE*/
-@media only screen and (max-width: 1280px) {
-    header button {
-        display: block;
-        font-size: 3em; /*font size matches default nav*/
-    }
-
-    nav li {
-        display: block; /*changes nav to block diplay for tablets and phones*/
-        padding-right: 0; /*removes padding since it's no longer needed*/
-    }
-}
-
-@media only screen and (max-width: 360px) { /*small adjustements for even smaller screens*/
-    header button {font-size: 2em;}
-    nav li {font-size: 2em;}
-}
 
 /*HEADING SECTION*/
 h1 {

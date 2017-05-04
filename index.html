@@ -10,14 +10,25 @@
     </head>
     <body>
         <header>
-            <nav>
-                <button id="navButton" data-toggle="collapse" data-target="#navList">Open/Close Menu</button>
-                <ul id="navList" class="collapse in">
-                    <li><a href="index.html" target="_top" title="Home">Home</a></li>
-                    <li><a href="#albums" title="Album releases by BAND">Album Releases</a></li>
-                    <li><a href="#members" title="Members of BAND">Band Members</a></li>
-                    <li><a href="#form" title="Register for our mailing list">Mailing List Form</a></li>
-                </ul>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" target="_top">Band Name</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a target="_top">Home</a></li>
+                            <li><a href="#albums">Albums</a></li>
+                            <li><a href="#members">Members</a></li>
+                            <li><a href="#form">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <h1>Band Name</h1>
             <div id="bandPictures" class="carousel slide" data-ride="carousel">
