@@ -27,11 +27,14 @@ pending
 @import url(bootstrap.css); /*fancy responsive stuff*/
 @import url(bootstrap-theme.css);
 
+/*NAV SECTION*/
+/*.navbar-inverse .navbar-nav > li > a {color: #C4C4C4;}*/
 
 /*HEADING SECTION*/
 h1 {
-    margin-top: 2em; /*prevents nav from overlapping header while at top*/
+    margin-top: 1em; /*prevents nav from overlapping header while at top*/
     text-align: center;
+    font-size: 4em;
 }
 
 .active img:first-child {
