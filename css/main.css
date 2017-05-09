@@ -24,8 +24,8 @@ pending
 ----------------------
  */
 @import url(normalize.css); /*CSS Reset*/
-@import url(bootstrap.css); /*fancy responsive stuff*/
-@import url(bootstrap-theme.css);
+@import url(bootstrap.min.css); /*fancy responsive stuff*/
+@import url(bootstrap-theme.min.css);
 
 /*NAV SECTION*/
 /*.navbar-inverse .navbar-nav > li > a {color: #C4C4C4;}*/
