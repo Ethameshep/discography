@@ -97,21 +97,24 @@
             <img src="null" alt="Picture of John Doe">
             <p>short thing about the band member maybe just their role i dont know yet</p>
         </section>
-        <!--form section TODO group up the form so there grouped in a relevant way-->
+        <!--form section-->
+        <h2>Register for our mailing list</h2>
         <form action="null" method="post" id="form">
             <fieldset class="name">
-                First Name:<br>
-                <input name="firstName" type="text"><br>
-                Last Name:<br>
-                <input name="lastName" type="text"><br>
+                <legend>Name:</legend>
+                <label for="firstName">First Name:</label><br>
+                <input name="firstName" type="text" id="firstName"><br>
+                <label for="lastName">Last Name:</label><br>
+                <input name="lastName" type="text" id="lastName"><br>
             </fieldset>
             <fieldset class="location">
-                Address:<br>
-                <input name="address" type="text"><br>
-                City:<br>
-                <input name="city" type="text"><br>
-                State:<br>
-                <select name="state">
+                <legend>Location:</legend>
+                <label for="address">Address:</label><br>
+                <input name="address" type="text" id="address"><br>
+                <label for="city">City:</label><br>
+                <input name="city" type="text" id="city"><br>
+                <label for="state">State:</label><br>
+                <select name="state" id="state">
                     <option value="Alabama">Alabama</option>
                     <option value="Alaska">Alaska</option>
                     <option value="Arizona">Arizona</option>
@@ -164,13 +167,14 @@
                     <option value="Wyoming">Wyoming</option>
                 </select><br>
 
-                Zip Code:<br>
-                <input name="zip" type="text"><br>
+                <label for="zip">Zip Code:</label><br>
+                <input name="zip" type="text" id="zip"><br>
             </fieldset>
             <fieldset class="age">
                 <!--DO NOT CHANGE AGE FORM-->
-                Birthday:<br>
-                <select name="month">
+                <legend>Birthday:</legend><br>
+                <label for="month">Month</label>
+                <select name="month" id="month">
                     <option value="January">January</option>
                     <option value="February">February</option>
                     <option value="March">March</option>
@@ -184,7 +188,8 @@
                     <option value="November">November</option>
                     <option value="December">December</option>
                 </select>
-                <select name="day">
+                <label for="day">Day</label>
+                <select name="day" id="day">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -217,7 +222,8 @@
                     <option value="30">30</option>
                     <option value="31">31</option>
                 </select>
-                <select name="year">
+                <label for="year">Year</label>
+                <select name="year" id="year">
                     <option value="2017">2017</option>
                     <option value="2016">2016</option>
                     <option value="2015">2015</option>
@@ -320,14 +326,14 @@
                 </select> <br>
             </fieldset>
             <fieldset class="email">
-                Email Preference:<br>
+                <legend>Email Preference:</legend><br>
                 <input name="email" type="radio" value="html" id="html"> <label for="html">HTML</label><br>
                 <input name="email" type="radio" value="text" id="text"> <label for="text">Plain Text</label><br>
             </fieldset>
-            Comment:<br>
-            <textarea name="comment"></textarea><br>
-            Terms of Service:
-            <input type="checkbox"><br>
+            <label for="comment">Comment:</label><br>
+            <textarea name="comment" id="comment"></textarea><br>
+            <label for="tos">I Agree to the Terms of Service:</label>
+            <input type="checkbox" name="tos" id="tos"><br>
             <input type="submit" value="Register">
         </form>
 

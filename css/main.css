@@ -8,11 +8,12 @@ Normalize.css: https://github.com/necolas/normalize.css/
 ----------------------
 TABLE OF CONTENTS
 
-1.Nav
-2.Heading
-3.Album release sections
-4.Band member sections
-5.Mail form
+1.Structure Control
+2.Nav
+3.Heading
+4.Album release sections
+5.Band member sections
+6.Mail form
 ----------------------
 COLOR GUIDE
 
@@ -23,10 +24,17 @@ TYPOGRAPHY GUIDE
 pending
 ----------------------
  */
-@import url(normalize.css); /*CSS Reset*/
 @import url(bootstrap.min.css); /*fancy responsive stuff*/
 @import url(bootstrap-theme.min.css);
 
+/*STUCTURE SECTION*/
+section, form, header p {
+    margin-left: .75%; /*adds a bit of whitespace*/
+}
+
+h2 {
+    margin-left: .375%;
+}
 /*NAV SECTION*/
 /*.navbar-inverse .navbar-nav > li > a {color: #C4C4C4;}*/
 
@@ -44,6 +52,11 @@ h1 {
 /*HEADING MOBILE*/
 @media only screen and (max-width: 360px) {
     h1 {
-        margin-top: 1.3em; /*reduces the space between nav and h1 for small screens*/
+        margin-top: 1em; /*reduces the space between nav and h1 for small screens*/
     }
+}
+/*FORM SECTION*/
+legend {
+    border-bottom: none;
+    margin: 0;
 }
