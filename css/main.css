@@ -36,7 +36,7 @@ h2 {margin-left: .375%;}
     h2 {margin-left: 1.25%;}
 }
 /*NAV SECTION*/
-/*.navbar-inverse .navbar-nav > li > a {color: #C4C4C4;}*/
+nav a {cursor: pointer;}
 
 /*HEADING SECTION*/
 h1 {
@@ -59,11 +59,13 @@ h1 {
 legend {
     border-bottom: none;
     margin: 0;
+    font-weight: bold;
 }
+label {font-weight: normal;}
 /*AGE SUBSECTION*/
 .age {
-position: relative;
-padding-bottom: 1em;
+    position: relative;
+    padding-bottom: 1em;
 }
 
 .age select, .age label {
@@ -85,4 +87,8 @@ label[for="year"] {left: 12em;}
 #day {left: 8em;} /*keep day and year 4em apart*/
 #year {left: 12em;}
 /*FOOTER SECTION*/
-footer {text-align: center;}
+footer {
+    margin-top: 1.5em;
+    text-align: center;
+    border-top: 2px solid #000;
+}
