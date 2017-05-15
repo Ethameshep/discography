@@ -28,12 +28,12 @@ pending
 @import url(bootstrap-theme.min.css);
 
 /*STUCTURE SECTION*/
-section, form, header p {
-    margin-left: .75%; /*adds a bit of whitespace*/
-}
+section, form, header p {margin-left: .75%;}
+h2 {margin-left: .375%;}
 
-h2 {
-    margin-left: .375%;
+@media only screen and (max-width: 1280px) {
+    section, form, header p {margin-left: 2.5%;} /*adds a bit of whitespace*/
+    h2 {margin-left: 1.25%;}
 }
 /*NAV SECTION*/
 /*.navbar-inverse .navbar-nav > li > a {color: #C4C4C4;}*/
@@ -60,3 +60,29 @@ legend {
     border-bottom: none;
     margin: 0;
 }
+/*AGE SUBSECTION*/
+.age {
+position: relative;
+padding-bottom: 1em;
+}
+
+.age select, .age label {
+    position: absolute;
+}
+
+.age select { /*adjust to change Y-Value*/
+    top: 1.8em;
+}
+
+.age label {
+    top: .4em;
+}
+
+label[for="month"] {left: 0em;} /*adjust to change X-Value*/
+label[for="day"] {left: 8em;}
+label[for="year"] {left: 12em;}
+#month {left: 0em;} /* keep month and day 8em apart*/
+#day {left: 8em;} /*keep day and year 4em apart*/
+#year {left: 12em;}
+/*FOOTER SECTION*/
+footer {text-align: center;}
