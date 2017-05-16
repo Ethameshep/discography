@@ -66,7 +66,7 @@ label {font-weight: normal;}
 
 textarea {
     height: 5em;
-    width: auto;
+    width: 16em;
 }
 /*AGE SUBSECTION*/
 .age {
@@ -87,11 +87,21 @@ textarea {
 }
 
 label[for="month"] {left: 0em;} /*adjust to change X-Value*/
-label[for="day"] {left: 8em;}
-label[for="year"] {left: 12em;}
-#month {left: 0em;} /* keep month and day 8em apart*/
-#day {left: 8em;} /*keep day and year 4em apart*/
-#year {left: 12em;}
+label[for="day"] {left: 9em;}
+label[for="year"] {left: 13.4em;}
+#month {
+    left: 0em;
+    width: 8.6em;
+} /* keep month and day 8em apart*/
+
+#day {
+    left: 9em;
+    width: 3.9em;
+} /*keep day and year 5em apart*/
+#year {
+left: 13.4em;
+width: 5.3em;
+}
 /*FOOTER SECTION*/
 footer {
     margin-top: 1.5em;
