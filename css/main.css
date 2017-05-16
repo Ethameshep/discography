@@ -52,7 +52,8 @@ h1 {
 /*HEADING MOBILE*/
 @media only screen and (max-width: 360px) {
     h1 {
-        margin-top: 1em; /*reduces the space between nav and h1 for small screens*/
+        margin-top: 1.4em; /*reduces the space between nav and h1 for small screens*/
+        font-size: 3em;
     }
 }
 /*FORM SECTION*/
@@ -62,6 +63,11 @@ legend {
     font-weight: bold;
 }
 label {font-weight: normal;}
+
+textarea {
+    height: 5em;
+    width: auto;
+}
 /*AGE SUBSECTION*/
 .age {
     position: relative;
