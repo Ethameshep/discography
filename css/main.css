@@ -72,7 +72,7 @@ textarea {
 /*AGE SUBSECTION*/
 .age {
     position: relative;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     page-break-inside: avoid;
 }
 
@@ -80,12 +80,12 @@ textarea {
     position: relative;
 }
 
-.age select {top: .8em;} /*adjust to change Y-Value*/
-.age label {top: -.6em;}
+.age select {top: 1.8em;} /*adjust to change Y-Value*/
+.age label {top: .4em;}
 
-label[for="month"] {left: 0.1em;} /*adjust to change X-Value*/
+label[for="month"] {left: 0.25em;} /*adjust to change X-Value*/
 label[for="day"] {left: -2.5em;}
-label[for="year"] {left: -4.2em;}
+label[for="year"] {left: -4.15em;}
 #month {
     left: -3em;
     width: 8.6em;
@@ -104,6 +104,7 @@ label[for="year"] {left: -4.2em;}
 }
 /*AGE MOBILE*/
 @media only screen and (max-width: 370px) {
+    .age {padding-bottom: 0;}
     .age select, .age label {
         position: static;
         float: left;
@@ -112,6 +113,10 @@ label[for="year"] {left: -4.2em;}
 
     #day, #year, #month {
         width: 8.6em;
+    }
+
+    .age label:after {
+        content: ":";
     }
 }
 /*FOOTER SECTION*/
