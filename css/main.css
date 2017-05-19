@@ -14,7 +14,7 @@ TABLE OF CONTENTS
 4.Album Release Section
 5.Band Member Section
 6.Mail Form Section
- a.Age Fieldset Subsection
+a.Age Fieldset Subsection
 ----------------------
 COLOR GUIDE
 
@@ -73,19 +73,15 @@ textarea {
 .age {
     position: relative;
     padding-bottom: 1em;
+    page-break-inside: avoid;
 }
 
 .age select, .age label {
     position: relative;
 }
 
-.age select { /*adjust to change Y-Value*/
-    top: .8em; /*moz ideal: 1.8em webkit ideal: 3.6em */
-}
-
-.age label {
-    top: -.6em; /*moz ideal: .4em webkit ideal: 2.3em */
-}
+.age select {top: .8em;} /*adjust to change Y-Value*/
+.age label {top: -.6em;}
 
 label[for="month"] {left: 0.1em;} /*adjust to change X-Value*/
 label[for="day"] {left: -2.5em;}
@@ -94,17 +90,29 @@ label[for="year"] {left: -4.2em;}
     left: -3em;
     width: 8.6em;
     height: 1.6em;
-} /* keep month and day 8em apart*/
+}
 
 #day {
     left: -4.6em;
     width: 3.9em;
     height: 1.6em;
-} /*keep day and year 5em apart*/
+}
 #year {
     left: -6.4em;
     width: 5.3em;
     height: 1.6em;
+}
+/*AGE MOBILE*/
+@media only screen and (max-width: 370px) {
+    .age select, .age label {
+        position: static;
+        float: left;
+        clear: both;
+    }
+
+    #day, #year, #month {
+        width: 8.6em;
+    }
 }
 /*FOOTER SECTION*/
 footer {
