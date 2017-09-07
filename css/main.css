@@ -33,84 +33,41 @@ section, form, header p {margin-left: .75%;}
 h2 {margin-left: .375%;}
 
 @media only screen and (max-width: 1280px) {
-    section, form, header p {margin-left: 2.5%;} /*adds a bit of whitespace*/
-    h2 {margin-left: 1.25%;}
+  section, form, header p {margin-left: 2.5%;} /*adds a bit of whitespace*/
+  h2 {margin-left: 1.25%;}
 }
 /*NAV SECTION*/
 nav a {cursor: pointer;}
 
 /*HEADING SECTION*/
-div#bandPictures {
-  width: 1200px;  
+div#bandPictures { 
   margin: auto;
   margin-top: 4%; /*puts a bit of space between carousel and nav*/
 }
 
-/*FORM SECTION*/
+/*FORM SECTION TOO replace with css form control to replace most of 50-99*/
 legend {
-    border-bottom: none;
-    margin: 0;
-    font-weight: bold;
+  border-bottom: none;
+  margin: 0;
+  font-weight: bold;
 }
 label {font-weight: normal;}
 
 textarea {
-    height: 5em;
-    width: 16em;
+  height: 5em;
+  width: 16em;
 }
 /*AGE SUBSECTION*/
-.age {
-    position: relative;
-    padding-bottom: 2em;
-    page-break-inside: avoid;
-}
-
-.age select, .age label {
-    position: relative;
-}
-
-.age select {top: 1.8em;} /*adjust to change Y-Value*/
-.age label {top: .4em;}
-
-label[for="month"] {left: 0.25em;} /*adjust to change X-Value*/
-label[for="day"] {left: -2.5em;}
-label[for="year"] {left: -4.15em;}
-#month {
-    left: -3em;
-    width: 8.6em;
-    height: 1.6em;
-}
-
-#day {
-    left: -4.6em;
-    width: 3.9em;
-    height: 1.6em;
-}
-#year {
-    left: -6.4em;
-    width: 5.3em;
-    height: 1.6em;
-}
-/*AGE MOBILE*/
-@media only screen and (max-width: 370px) {
-    .age {padding-bottom: 0;}
-    .age select, .age label {
-        position: static;
-        float: left;
-        clear: both;
-    }
-
-    #day, #year, #month {
-        width: 8.6em;
-    }
-
-    .age label:after {
-        content: ":";
-    }
-}
+div.d-flex {display: flex;} /*bootstrap won't detect the class for some reason*/
+label[for="month"] {order: -1;} /*arragenges label in correct order to display with select tags below*/
+label[for="day"] {order: -1;}
+label[for="year"] {order: -1;}
+#month {}
+#day {}
+#year {}
 /*FOOTER SECTION*/
 footer {
-    margin-top: 1.5em;
-    text-align: center;
-    border-top: 2px solid #000;
+  margin-top: 1.5em;
+  text-align: center;
+  border-top: 2px solid #000;
 }
