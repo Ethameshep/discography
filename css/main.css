@@ -14,7 +14,6 @@ TABLE OF CONTENTS
 4.Album Release Section
 5.Band Member Section
 6.Mail Form Section
-6a.Age Fieldset Subsection
 ----------------------
 COLOR GUIDE
 
@@ -24,50 +23,10 @@ TYPOGRAPHY GUIDE
 
 pending
 ----------------------
- */
-@import url(bootstrap.min.css); /*fancy responsive stuff*/
-@import url(bootstrap-theme.min.css);
-
-/*STUCTURE SECTION*/
-section, form, header p {margin-left: .75%;}
-h2 {margin-left: .375%;}
-
-@media only screen and (max-width: 1280px) {
-  section, form, header p {margin-left: 2.5%;} /*adds a bit of whitespace*/
-  h2 {margin-left: 1.25%;}
-}
-/*NAV SECTION*/
-nav a {cursor: pointer;}
+*/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css); /*BootStrap 3.3.7 CDN*/
 
 /*HEADING SECTION*/
-div#bandPictures { 
-  margin: auto;
-  margin-top: 4%; /*puts a bit of space between carousel and nav*/
-}
-
-/*FORM SECTION TOO replace with css form control to replace most of 50-99*/
-legend {
-  border-bottom: none;
-  margin: 0;
-  font-weight: bold;
-}
-label {font-weight: normal;}
-
-textarea {
-  height: 5em;
-  width: 16em;
-}
-/*AGE SUBSECTION*/
-div.d-flex {display: flex;} /*bootstrap won't detect the class for some reason*/
-label[for="month"] {order: -1;} /*arragenges label in correct order to display with select tags below*/
-label[for="day"] {order: -1;}
-label[for="year"] {order: -1;}
-#month {}
-#day {}
-#year {}
-/*FOOTER SECTION*/
-footer {
-  margin-top: 1.5em;
-  text-align: center;
-  border-top: 2px solid #000;
+#bandPictures { 
+  margin-top: 5rem; /*prevents nav from overlapping caoursel on smaller screens*/
 }
