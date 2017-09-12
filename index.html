@@ -107,22 +107,22 @@
     <!--form section-->
     <h2>Register for our mailing list</h2>
     <form action="null" method="post" id="form">
-      <aside>All fields must be filled out to register</aside>
+      <aside>All fields except the comment box must be filled out to register</aside>
       <fieldset class="name form-group">
         <legend>Name</legend>
         <label for="firstName">First Name:</label>
-        <input name="firstName" class="form-control" type="text" id="firstName">
+        <input required name="firstName" class="form-control" type="text" id="firstName">
         <label for="lastName" class="control-label">Last Name:</label>
-        <input name="lastName" class="form-control" type="text" id="lastName">
+        <input required name="lastName" class="form-control" type="text" id="lastName">
       </fieldset>
       <fieldset class="location form-group">
         <legend>Location</legend>
         <label for="address">Address:</label>
-        <input name="address" type="text" class="form-control" id="address">
+        <input required name="address" type="text" class="form-control" id="address">
         <label for="city">City:</label>
-        <input name="city" type="text" class="form-control" id="city">
+        <input required name="city" type="text" class="form-control" id="city">
         <label for="state">State:</label>
-        <select name="state" id="state" class="form-control" >
+        <select required name="state" id="state" class="form-control" >
           <option value="Alabama">Alabama</option>
           <option value="Alaska">Alaska</option>
           <option value="Arizona">Arizona</option>
@@ -175,14 +175,14 @@
           <option value="Wyoming">Wyoming</option>
         </select>
         <label for="zip">Zip Code:</label>
-        <input class="form-control" name="zip" type="text" id="zip">
+        <input required class="form-control" name="zip" type="text" id="zip">
       </fieldset>
       <fieldset class="age form-group">
         <!--DO NOT CHANGE AGE FORM-->
         <legend>Birthday:</legend>
         <div class="form-inline">
         <label for="month">Month:</label>
-        <select class="form-control input-sm" name="month" id="month">
+        <select required class="form-control input-sm" name="month" id="month">
           <option value="January">January</option>
           <option value="February">February</option>
           <option value="March">March</option>
@@ -197,7 +197,7 @@
           <option value="December">December</option>
         </select>
         <label for="day">Day:</label>
-        <select class="form-control input-sm" name="day" id="day">
+        <select required class="form-control input-sm" name="day" id="day">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -231,7 +231,7 @@
           <option value="31">31</option>
         </select>
         <label for="year">Year:</label>
-        <select class="form-control input-sm" name="year" id="year">
+        <select required class="form-control input-sm" name="year" id="year">
           <option value="2017">2017</option>
           <option value="2016">2016</option>
           <option value="2015">2015</option>
@@ -335,14 +335,14 @@
       </fieldset>
       <fieldset class="email form-group">
         <legend>Email Preference</legend>
-        <input name="email" type="radio" value="html" id="html"> <label for="html">HTML</label><br>
-        <input name="email" type="radio" value="text" id="text"> <label for="text">Plain Text</label>
+        <input required name="email" type="radio" value="html" id="html"> <label for="html">HTML</label><br>
+        <input required name="email" type="radio" value="text" id="text"> <label for="text">Plain Text</label>
       </fieldset>
       <fieldset class="tos form-group">
         <label for="comment">Comment:</label>
         <textarea class="form-control" name="comment" id="comment"></textarea><br>
         <label for="tos">I Agree to the Terms of Service:</label>
-        <input type="checkbox" name="tos" id="tos"><br>
+        <input required type="checkbox" name="tos" id="tos"><br>
         <input type="submit" value="Register">
       </fieldset>
     </form>

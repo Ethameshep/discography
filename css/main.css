@@ -30,3 +30,8 @@ pending
 #bandPictures { 
   margin-top: 5rem; /*prevents nav from overlapping caoursel on smaller screens*/
 }
+
+/*FOOTER SECTION*/
+footer {
+  border-top: 1px solid;
+}
