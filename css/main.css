@@ -32,11 +32,11 @@ pending
 }
 
 /*ALBUMS AND MEMBERS SECTION*/
-.centerInline {
+.inlineCenter {
   text-align: center;
 }
 
-.centerInline p, .centerInline ol {
+.inlineCenter p, .inlineCenter ol {
   display: inline-block;
   text-align: left;
 }
