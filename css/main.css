@@ -31,6 +31,21 @@ pending
   margin-top: 5rem; /*prevents nav from overlapping caoursel on smaller screens*/
 }
 
+/*ALBUMS AND MEMBERS SECTION*/
+.centerInline {
+  text-align: center;
+}
+
+.centerInline p, .centerInline ol {
+  display: inline-block;
+  text-align: left;
+}
+
+section img { /*bootsrap refuses to apply these attributes through classes*/
+  margin: auto;
+  display: block;
+}
+
 /*FOOTER SECTION*/
 footer {
   border-top: 1px solid;
