@@ -119,7 +119,7 @@
     </div>
     <!--form section-->
     <h2>Register for our mailing list</h2>
-    <form action="null" method="post" id="form">
+    <form method="post" id="form">
       <aside>All fields except the comment box must be filled out to register</aside>
       <fieldset class="name form-group">
         <legend>Name</legend>
@@ -347,9 +347,11 @@
           </select></div>
       </fieldset>
       <fieldset class="email form-group">
-        <legend>Email Preference</legend>
-        <input required name="email" type="radio" value="html" id="html"> <label for="html">HTML</label><br>
-        <input required name="email" type="radio" value="text" id="text"> <label for="text">Plain Text</label>
+        <legend>Email Preferences</legend>
+        <label for="emailAddress">Email Address:</label>
+        <input required name="emailAddress" type="email" id="emailAddress" class="form-control">
+        <input required name="email" type="radio" value="html" id="htmlRadio"> <label for="htmlRadio">HTML</label>
+        <input required name="email" type="radio" value="text" id="textRadio"> <label for="textRadio">Plain Text</label>
       </fieldset>
       <fieldset class="tos form-group">
         <legend>Terms of Service &amp; Comments</legend>
