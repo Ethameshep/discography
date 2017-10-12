@@ -14,10 +14,10 @@ TABLE OF CONTENTS
 4.Album Release Section
 5.Band Member Section
 6.Mail Form Section
+7.Footer Section
 ----------------------
 COLOR GUIDE
 
-pending
 ----------------------
 TYPOGRAPHY GUIDE
 
@@ -31,19 +31,27 @@ pending
   margin-top: 5rem; /*prevents nav from overlapping caoursel on smaller screens*/
 }
 
+div.item img { /*forces smaller images to upscale to fill parent*/
+  margin: auto;
+  width: 100%;
+}
+
 /*ALBUMS AND MEMBERS SECTION*/
-.inlineCenter {
-  text-align: center;
-}
-
-.inlineCenter p, .inlineCenter ol {
-  display: inline-block;
+header p, section p, section ol {
   text-align: left;
+  font-size: 1.8rem;
 }
 
-section img { /*bootsrap refuses to apply these attributes through classes*/
+section ol {
+  list-style-position: inside;
+  padding-left: 0; /*strips away default padding*/
+}
+
+section img {
   margin: auto;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*FOOTER SECTION*/
