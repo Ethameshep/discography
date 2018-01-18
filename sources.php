@@ -1,3 +1,4 @@
+<?php include './includes/title.php'; ?>
 <!DOCTYPE HTML>
 <html lang="en">
   <head>

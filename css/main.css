@@ -1,5 +1,5 @@
 /* Discography Project
-AUTHOR: https://github.com/ultimatezenzar 
+AUTHOR: https://github.com/ultimatezenzar
 LICENSE: The code written for this project is all under the MIT License.
 ----------------------
 LIBRARIES USED
@@ -24,10 +24,10 @@ TYPOGRAPHY GUIDE
 pending
 ----------------------
 */
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css); /*BootStrap 3.3.7 CDN*/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
 
 /*HEADING SECTION*/
-#bandPictures { 
+#bandPictures {
   margin-top: 5rem; /*prevents nav from overlapping caoursel on smaller screens*/
 }
 
